@@ -128,7 +128,7 @@ header {
   margin-top: 13px;
   margin-bottom: 13px; }
 .btns_sp .twitter-btn {
-  background-color: #57c7f6;
+  background-color: #5cbae1;
   padding: 13px;
   margin-top: 13px;
   margin-bottom: 13px; }
@@ -177,10 +177,10 @@ header {
           -moz-border-radius: 3px;
           -webkit-border-radius: 3px;
           border-radius: 3px;
-          background-color: #57c7f6;
-          -moz-box-shadow: 0px 4px #0c9edb;
-          -webkit-box-shadow: 0px 4px #0c9edb;
-          box-shadow: 0px 4px #0c9edb; }
+          background-color: #5cbae1;
+          -moz-box-shadow: 0px 4px #218ab6;
+          -webkit-box-shadow: 0px 4px #218ab6;
+          box-shadow: 0px 4px #218ab6; }
       .btns_pc li a:hover .mail-btn {
         background-color: #65d065;
         -moz-box-shadow: 0px 4px #39ba39;
@@ -192,10 +192,10 @@ header {
         -webkit-box-shadow: 0px 4px #406498;
         box-shadow: 0px 4px #406498; }
       .btns_pc li a:hover .twitter-btn {
-        background-color: #6fcff7;
-        -moz-box-shadow: 0px 4px #30baf4;
-        -webkit-box-shadow: 0px 4px #30baf4;
-        box-shadow: 0px 4px #30baf4; }
+        background-color: #72c3e5;
+        -moz-box-shadow: 0px 4px #3aabdb;
+        -webkit-box-shadow: 0px 4px #3aabdb;
+        box-shadow: 0px 4px #3aabdb; }
       .btns_pc li a:active {
         top: 3px;
         box-shadow: none; } }

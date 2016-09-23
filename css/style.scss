@@ -1,0 +1,280 @@
+@charset 'utf-8';
+@import 'compass';
+@import 'https://fonts.googleapis.com/css?family=Cinzel';
+
+// font-family
+$baseFontFamily :"游ゴシック", YuGothic, "メイリオ",Verdana, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+
+// color
+$baseColor: #4E5166;
+$fontColor: #FFFFFF;
+$subColor: #93A8AC;
+$mailColor: #51CA51;
+$fbColor: #4d77b4;
+$twitterColor: #57c7f6;
+
+
+html{ font-size: 62.5%; }
+
+body{
+  color: $fontColor;
+  font-size: 1.4rem;
+  font-family:$baseFontFamily;
+  line-height:1.6;
+  letter-spacing: 0.1em; 
+  background-color: $baseColor;
+  text-align: center;
+}
+
+.cinzel{
+    font-family: 'cinzel', sans-serif;
+}
+
+    
+header{
+    background-image: url("../images/header/header.jpg");
+    background-size: cover;
+    background-position: center center;
+    
+    @media screen and (-webkit-min-device-pixel-ratio:2), (min-resolution: 2dppx) {
+    background-image: url("../images/header/header@2x.jpg");
+}
+
+    height: 250px;
+    width: 100%;
+    .header_title{
+        padding-top: 13px;
+        h1{
+            font-size: 2.7rem;
+        }
+        h2{
+            letter-spacing: 2px;
+            font-size: 1.5rem;
+            line-height: 1.3;
+        }
+    }
+}
+
+@media (min-width: 678px){
+    header{
+        height: 470px;
+        .header_title{
+            padding-top: 20px;
+            h1{
+                font-size: 5rem;
+                letter-spacing: 0rem;
+            }
+            h2{
+                letter-spacing: 4px;
+                font-size: 2.5rem;
+                line-height: 1.3;
+            }
+        }
+    }
+}
+
+.sidebar{
+    ul{
+        @include display-flex();
+        @include justify-content(center); 
+        @include align-items(center); 
+        
+        li{
+            border-right: 1.8px solid darken($baseColor, 8%);
+            a{
+                color: white;
+                text-decoration: none;
+                
+                h3{
+                    font-size: 1.5rem;
+                    padding: 20px 10px;
+                    span{
+                        display: block;
+                        font-size: 1rem;
+                        line-height: 1;
+                    }
+                }
+                
+            }
+            .intro a{
+                font-size: 1.2rem;
+            }
+        }
+        li:last-child{
+            border-right: none;
+        }
+    }
+}
+
+@media(max-width:678px){
+    .sidebar{
+        ul{
+            li{
+                width: (100%/4);
+            }
+        }
+    }
+}
+
+@media(min-width:678px){
+    .sidebar{
+        ul{
+            li{
+                border-right: none;
+                padding: 15px 50px 15px 0;
+                a{
+                    h3{
+                        font-size: 2.3rem;
+                        span{
+                            font-size: 1.5rem;
+                            line-height: 1.2;
+                        }
+                    }
+                }
+                a:hover{
+                    color: #AAC4EB;
+                    
+                }
+            }
+        }
+    }
+}
+
+.intro{
+    background-color: darken($baseColor, 20%);
+    padding: 0 23px 23px 23px;
+    h4{
+        padding: 18px;
+        
+        font-size: 2.1rem;
+        
+        span{
+            display: block;
+            font-size: 1.5rem;
+            line-height: 1;
+        }
+    }
+    p{
+        padding: 0 auto;
+        text-align: justify;
+    }
+    @media(min-width:550px){
+        padding: 0 28px 28px 28px;
+        h4{
+            font-size: 3rem;
+            span{
+                font-size: 2rem;
+                
+            }
+        }
+        p{
+            font-size: 1.7rem;
+            line-height: 2;
+            letter-spacing: 0.2em;
+            padding: 0 70px 0 70px;
+            
+        }
+    }
+}
+.btns_pc{
+    display: none;
+}
+.btns_sp{
+    a{
+        display: block;
+        text-decoration: none;
+        color: white;
+        font-size: 1.8rem;
+        
+    }
+    .mail-btn{
+        background-color: $mailColor;
+        padding: 13px;
+        margin-top:13px;
+        margin-bottom:13px;
+    }
+    .fb-btn{
+        background-color: $fbColor;
+        padding: 13px;
+        margin-top:13px;
+        margin-bottom:13px;
+    }
+    .twitter-btn{
+        background-color: $twitterColor;
+        padding: 13px;
+        margin-top:13px;
+        margin-bottom:13px;
+    }
+}
+
+@mixin btn{
+    padding: 9px;
+    margin-top: 8px;
+    font-size: 1.5rem;
+    @include border-radius(3px);
+    
+    
+}
+
+@media(min-width: 550px){
+    .btns_sp{
+        display: none;
+    }
+    .btns_pc{
+        display: block;
+        li{
+            display: inline-block;
+            padding: 30px;
+            margin-right: 55px;
+            p{
+                font-size: 1.5rem;
+            }
+            a{
+                text-decoration: none;
+                color: white;
+                .mail-btn{
+                    @include btn;
+                    background-color: $mailColor;
+                    @include box-shadow(0px 4px darken($mailColor, 20%));
+                }
+                .fb-btn{
+                    @include btn;
+                    background-color: $fbColor;
+                    @include box-shadow(0px 4px darken($fbColor, 20%));
+                }
+                .twitter-btn{
+                    @include btn;
+                    background-color: $twitterColor;
+                    @include box-shadow(0px 4px darken($twitterColor, 20%));
+                }
+                
+            }
+            a:hover{
+                .mail-btn{
+                    background-color: lighten($mailColor, 5%);
+                    @include box-shadow(0px 4px darken($mailColor, 8%));
+                }
+                .fb-btn{
+                    background-color: lighten($fbColor, 5%);
+                    @include box-shadow(0px 4px darken($fbColor, 8%));
+                }
+                .twitter-btn{
+                    background-color: lighten($twitterColor, 5%);
+                    @include box-shadow(0px 4px darken($twitterColor, 8%));
+                }
+            }
+            a:active{
+                top: 3px;
+                box-shadow: none;
+            }
+        }
+    }
+}
+
+footer{
+    background-color: #7a7c8b;
+    padding: 3px;
+}
+//common style
+
+

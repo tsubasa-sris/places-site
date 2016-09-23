@@ -1,0 +1,206 @@
+@charset "UTF-8";
+@import "https://fonts.googleapis.com/css?family=Cinzel";
+html {
+  font-size: 62.5%; }
+
+body {
+  color: #FFFFFF;
+  font-size: 1.4rem;
+  font-family: "游ゴシック", YuGothic, "メイリオ", Verdana, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+  line-height: 1.6;
+  letter-spacing: 0.1em;
+  background-color: #4E5166;
+  text-align: center; }
+
+.cinzel {
+  font-family: 'cinzel', sans-serif; }
+
+header {
+  background-image: url("../images/header/header.jpg");
+  background-size: cover;
+  background-position: center center;
+  height: 250px;
+  width: 100%; }
+  @media screen and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+    header {
+      background-image: url("../images/header/header@2x.jpg"); } }
+  header .header_title {
+    padding-top: 13px; }
+    header .header_title h1 {
+      font-size: 2.7rem; }
+    header .header_title h2 {
+      letter-spacing: 2px;
+      font-size: 1.5rem;
+      line-height: 1.3; }
+
+@media (min-width: 678px) {
+  header {
+    height: 470px; }
+    header .header_title {
+      padding-top: 20px; }
+      header .header_title h1 {
+        font-size: 5rem;
+        letter-spacing: 0rem; }
+      header .header_title h2 {
+        letter-spacing: 4px;
+        font-size: 2.5rem;
+        line-height: 1.3; } }
+.sidebar ul {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  align-items: center; }
+  .sidebar ul li {
+    border-right: 1.8px solid #3c3f4f; }
+    .sidebar ul li a {
+      color: white;
+      text-decoration: none; }
+      .sidebar ul li a h3 {
+        font-size: 1.5rem;
+        padding: 20px 10px; }
+        .sidebar ul li a h3 span {
+          display: block;
+          font-size: 1rem;
+          line-height: 1; }
+    .sidebar ul li .intro a {
+      font-size: 1.2rem; }
+  .sidebar ul li:last-child {
+    border-right: none; }
+
+@media (max-width: 678px) {
+  .sidebar ul li {
+    width: 25%; } }
+@media (min-width: 678px) {
+  .sidebar ul li {
+    border-right: none;
+    padding: 15px 50px 15px 0; }
+    .sidebar ul li a h3 {
+      font-size: 2.3rem; }
+      .sidebar ul li a h3 span {
+        font-size: 1.5rem;
+        line-height: 1.2; }
+    .sidebar ul li a:hover {
+      color: #AAC4EB; } }
+.intro {
+  background-color: #22232c;
+  padding: 0 23px 23px 23px; }
+  .intro h4 {
+    padding: 18px;
+    font-size: 2.1rem; }
+    .intro h4 span {
+      display: block;
+      font-size: 1.5rem;
+      line-height: 1; }
+  .intro p {
+    padding: 0 auto;
+    text-align: justify; }
+  @media (min-width: 550px) {
+    .intro {
+      padding: 0 28px 28px 28px; }
+      .intro h4 {
+        font-size: 3rem; }
+        .intro h4 span {
+          font-size: 2rem; }
+      .intro p {
+        font-size: 1.7rem;
+        line-height: 2;
+        letter-spacing: 0.2em;
+        padding: 0 70px 0 70px; } }
+
+.btns_pc {
+  display: none; }
+
+.btns_sp a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  font-size: 1.8rem; }
+.btns_sp .mail-btn {
+  background-color: #51CA51;
+  padding: 13px;
+  margin-top: 13px;
+  margin-bottom: 13px; }
+.btns_sp .fb-btn {
+  background-color: #4d77b4;
+  padding: 13px;
+  margin-top: 13px;
+  margin-bottom: 13px; }
+.btns_sp .twitter-btn {
+  background-color: #57c7f6;
+  padding: 13px;
+  margin-top: 13px;
+  margin-bottom: 13px; }
+
+@media (min-width: 550px) {
+  .btns_sp {
+    display: none; }
+
+  .btns_pc {
+    display: block; }
+    .btns_pc li {
+      display: inline-block;
+      padding: 30px;
+      margin-right: 55px; }
+      .btns_pc li p {
+        font-size: 1.5rem; }
+      .btns_pc li a {
+        text-decoration: none;
+        color: white; }
+        .btns_pc li a .mail-btn {
+          padding: 9px;
+          margin-top: 8px;
+          font-size: 1.5rem;
+          -moz-border-radius: 3px;
+          -webkit-border-radius: 3px;
+          border-radius: 3px;
+          background-color: #51CA51;
+          -moz-box-shadow: 0px 4px #2a8b2a;
+          -webkit-box-shadow: 0px 4px #2a8b2a;
+          box-shadow: 0px 4px #2a8b2a; }
+        .btns_pc li a .fb-btn {
+          padding: 9px;
+          margin-top: 8px;
+          font-size: 1.5rem;
+          -moz-border-radius: 3px;
+          -webkit-border-radius: 3px;
+          border-radius: 3px;
+          background-color: #4d77b4;
+          -moz-box-shadow: 0px 4px #2e486d;
+          -webkit-box-shadow: 0px 4px #2e486d;
+          box-shadow: 0px 4px #2e486d; }
+        .btns_pc li a .twitter-btn {
+          padding: 9px;
+          margin-top: 8px;
+          font-size: 1.5rem;
+          -moz-border-radius: 3px;
+          -webkit-border-radius: 3px;
+          border-radius: 3px;
+          background-color: #57c7f6;
+          -moz-box-shadow: 0px 4px #0c9edb;
+          -webkit-box-shadow: 0px 4px #0c9edb;
+          box-shadow: 0px 4px #0c9edb; }
+      .btns_pc li a:hover .mail-btn {
+        background-color: #65d065;
+        -moz-box-shadow: 0px 4px #39ba39;
+        -webkit-box-shadow: 0px 4px #39ba39;
+        box-shadow: 0px 4px #39ba39; }
+      .btns_pc li a:hover .fb-btn {
+        background-color: #5f85bc;
+        -moz-box-shadow: 0px 4px #406498;
+        -webkit-box-shadow: 0px 4px #406498;
+        box-shadow: 0px 4px #406498; }
+      .btns_pc li a:hover .twitter-btn {
+        background-color: #6fcff7;
+        -moz-box-shadow: 0px 4px #30baf4;
+        -webkit-box-shadow: 0px 4px #30baf4;
+        box-shadow: 0px 4px #30baf4; }
+      .btns_pc li a:active {
+        top: 3px;
+        box-shadow: none; } }
+footer {
+  background-color: #7a7c8b;
+  padding: 3px; }
+
+/*# sourceMappingURL=style.css.map */

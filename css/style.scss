@@ -155,10 +155,10 @@ header{
         }
     }
     p{
-        padding: 0 auto;
+        padding: 0;
         text-align: justify;
     }
-    @media(min-width:550px){
+    @media(min-width:678px){
         padding: 0 28px 28px 28px;
         h4{
             font-size: 3rem;
@@ -216,7 +216,7 @@ header{
     
 }
 
-@media(min-width: 550px){
+@media(min-width: 678px){
     .btns_sp{
         display: none;
     }
@@ -277,4 +277,202 @@ footer{
 }
 //common style
 
+@mixin countryBox{
+    background-size: cover;
+    background-position: center center;
+    padding: 25px;
+    font-size: 1.6rem;
+    min-height: 175px;
+    text-align: justify;
+    line-height: 2;
+    border-radius: 3px;
+}
 
+@mixin countryBox_sp{
+    background-size: cover;
+    background-position: center center;
+    padding: 21px;
+    font-size: 1.4rem;
+    min-height: 130px;
+    text-align: justify;
+    line-height: 1.6;
+    border-radius: 3px;
+}
+
+.countries{
+    padding: 10px;
+    @include display-flex;
+    @include flex-direction(row);
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .country-box{
+        width: (100% / 3);
+        box-sizing: border-box;
+        padding: 5px 30px 5px 30px;
+        h5{
+            font-size: 2.6rem;
+            padding: 10px;
+        }
+        .singapore{
+            background-image: url('../images/overseas/singapore.jpg');
+            @media screen and (-webkit-min-device-pixel-ratio:2),
+                              (min-resolution: 2dppx){
+              background-image: url("../images/overseas/singapore@2x.jpg");
+            }
+            @include countryBox;
+            
+        }
+        .australia{
+            background-image: url('../images/overseas/australia.jpg');
+            @media screen and (-webkit-min-device-pixel-ratio:2),
+                              (min-resolution: 2dppx){
+              background-image: url("../images/overseas/australia@2x.jpg");
+            }
+            @include countryBox;
+        }
+        .england{
+            background-image: url('../images/overseas/england.jpg');
+            @media screen and (-webkit-min-device-pixel-ratio:2),
+                              (min-resolution: 2dppx){
+              background-image: url("../images/overseas/england@2x.jpg");
+            }
+            @include countryBox;
+        }
+        .canada{
+            background-image: url('../images/overseas/canada.jpg');
+            @media screen and (-webkit-min-device-pixel-ratio:2),
+                              (min-resolution: 2dppx){
+              background-image: url("../images/overseas/canada@2x.jpg");
+            }
+            @include countryBox;
+        }
+        .vietnam{
+            background-image: url('../images/overseas/vietnam.jpg');
+            @media screen and (-webkit-min-device-pixel-ratio:2),
+                              (min-resolution: 2dppx){
+              background-image: url("../images/overseas/vietnam@2x.jpg");
+            }
+            @include countryBox;
+        }
+        .turkey{
+            background-image: url('../images/overseas/turkey.jpg');
+            @media screen and (-webkit-min-device-pixel-ratio:2),
+                              (min-resolution: 2dppx){
+              background-image: url("../images/overseas/turkey@2x.jpg");
+            }
+            @include countryBox;
+        }
+        .kagawa{
+            background-image: url('../images/japan/kagawa.jpg');
+            @media screen and (-webkit-min-device-pixel-ratio:2),
+                              (min-resolution: 2dppx){
+              background-image: url("../images/japan/kagawa@2x.jpg");
+            }
+            @include countryBox;
+        }
+        .kanazawa{
+            background-image: url('../images/japan/kanazawa.jpg');
+            @media screen and (-webkit-min-device-pixel-ratio:2),
+                              (min-resolution: 2dppx){
+              background-image: url("../images/japan/kanazawa@2x.jpg");
+            }
+            @include countryBox;
+        }
+        .nanatsugama{
+            background-image: url('../images/japan/nanatsugama.jpg');
+            @media screen and (-webkit-min-device-pixel-ratio:2),
+                              (min-resolution: 2dppx){
+              background-image: url("../images/japan/nanatsugama@2x.jpg");
+            }
+            @include countryBox;
+        }
+        .fox_village{
+            background-image: url('../images/japan/fox.jpg');
+            @media screen and (-webkit-min-device-pixel-ratio:2),
+                              (min-resolution: 2dppx){
+              background-image: url("../images/japan/fox@2x.jpg");
+            }
+            @include countryBox;
+        }
+        .itsukushima{
+            background-image: url('../images/japan/itsukushima.jpg');
+            @media screen and (-webkit-min-device-pixel-ratio:2),
+                              (min-resolution: 2dppx){
+              background-image: url("../images/japan/itsukushima@2x.jpg");
+            }
+            @include countryBox;
+        }
+        .factory{
+            background-image: url('../images/japan/factory.jpg');
+            @media screen and (-webkit-min-device-pixel-ratio:2),
+                              (min-resolution: 2dppx){
+              background-image: url("../images/japan/factory@2x.jpg");
+            }
+            @include countryBox;
+        }
+        .hawaii{
+            background-image: url('../images/again/hawaii.jpg');
+            @media screen and (-webkit-min-device-pixel-ratio:2),
+                              (min-resolution: 2dppx){
+              background-image: url("../images/again/hawaii@2x.jpg");
+            }
+            @include countryBox;
+        }
+        .vancouver{
+            background-image: url('../images/again/vancouver.jpg');
+            @media screen and (-webkit-min-device-pixel-ratio:2),
+                              (min-resolution: 2dppx){
+              background-image: url("../images/again/vancouver@2x.jpg");
+            }
+            @include countryBox;
+        }
+        .losangels{
+            background-image: url('../images/again/losangels.jpg');
+            @media screen and (-webkit-min-device-pixel-ratio:2),
+                              (min-resolution: 2dppx){
+              background-image: url("../images/again/losangels@2x.jpg");
+            }
+            @include countryBox;
+        }
+        .nikko{
+            background-image: url('../images/again/nikko.jpg');
+            @media screen and (-webkit-min-device-pixel-ratio:2),
+                              (min-resolution: 2dppx){
+              background-image: url("../images/again/nikko@2x.jpg");
+            }
+            @include countryBox;
+        }
+        .kyoto{
+            background-image: url('../images/again/kyoto.jpg');
+            @media screen and (-webkit-min-device-pixel-ratio:2),
+                              (min-resolution: 2dppx){
+              background-image: url("../images/again/kyoto@2x.jpg");
+            }
+            @include countryBox;
+        }
+        .okinawa{
+            background-image: url('../images/again/okinawa.jpg');
+            @media screen and (-webkit-min-device-pixel-ratio:2),
+                              (min-resolution: 2dppx){
+              background-image: url("../images/again/okinawa@2x.jpg");
+            }
+            @include countryBox;
+        }
+    }
+    
+    
+    @media(max-width: 678px){
+        @include flex-direction(column);
+        .country-box{
+            width: 100%;
+            
+            h5{
+                font-size: 2.1rem;
+            }
+            .australia, .turkey, .canada, .england, .vietnam, .singapore, .kanazawa, .kagawa, .nanatsugama, .fox_village, .itsukushima, .factory, .hawaii, .vancouver, .losangels, .kyoto, .nikko, .okinawa{
+                @include countryBox_sp;
+            }
+        }
+    }
+}
+//countries
